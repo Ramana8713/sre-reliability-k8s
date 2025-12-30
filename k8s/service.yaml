@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: sre-service
+spec:
+  selector:
+    app: sre
+  ports:
+  - port: 80
+    targetPort: 5000
